@@ -1,0 +1,18 @@
+name       : python-cached-property
+version    : 1.2.0
+release    : 1
+source     :
+    - https://pypi.python.org/packages/54/ab/2bbe252f8e0a98d54870a410e8650f403fa6e2eb0cc208a453cd71c12282/cached-property-1.2.0.tar.gz : e3081a8182d3d4b7283eeade76c382bcfd4dfd644ca800598229c2ef798abb53
+license    : BSD-3-Clause
+component  : programming.python
+summary    : A decorator for caching properties in classes.
+description: A decorator for caching properties in classes.
+builddeps  :
+    - pkgconfig(python-3.5)
+    - python-setuptools
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install

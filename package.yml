@@ -1,6 +1,6 @@
 name       : python-cached-property
 version    : 1.3.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/pydanny/cached-property/archive/1.3.0.tar.gz : 423c2d8403b0536efede5f2c107d19172956b36d13a8770d941bd734959dd9d2
 license    : BSD-3-Clause
@@ -8,7 +8,7 @@ component  : programming.python
 summary    : A decorator for caching properties in classes.
 description: A decorator for caching properties in classes.
 builddeps  :
-    - pkgconfig(python-3.5)
+    - pkgconfig(python3)
     - python-setuptools
 build      : |
     %python_setup

@@ -1,6 +1,6 @@
 name       : python-cached-property
 version    : 1.5.1
-release    : 5
+release    : 6
 source     :
     - https://github.com/pydanny/cached-property/archive/1.5.1.tar.gz : b8d80b92f78a147a5bcc6eb1dbf9c5b5c5a003a6d01de5a40da3479516e4e091
 license    : BSD-3-Clause

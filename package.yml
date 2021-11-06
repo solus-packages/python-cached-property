@@ -1,8 +1,8 @@
 name       : python-cached-property
-version    : 1.5.1
-release    : 6
+version    : 1.5.2
+release    : 7
 source     :
-    - https://github.com/pydanny/cached-property/archive/1.5.1.tar.gz : b8d80b92f78a147a5bcc6eb1dbf9c5b5c5a003a6d01de5a40da3479516e4e091
+    - https://github.com/pydanny/cached-property/archive/refs/tags/1.5.2.tar.gz : b566d247a65ece61c62d6fefda082cf3ddca46e800576196657d44d9c4cc5cec
 license    : BSD-3-Clause
 component  : programming.python
 summary    : A decorator for caching properties in classes.
@@ -11,10 +11,9 @@ builddeps  :
     - pkgconfig(python3)
     - python-freezegun
     - python-pytest
-    - python-setuptools
 build      : |
     %python3_setup
 install    : |
     %python3_install
-#check      : |
-#    %python3_test pytest3
+check      : |
+    %python3_test pytest3 -k 'not test_threads_ttl_expiry'
